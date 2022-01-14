@@ -14,7 +14,7 @@
   "authors": [
     {
       "name": "Adam Kasperczak",
-      "homepage": "adam.kasperczak@sylius.com"
+      "email": "adam.kasperczak@sylius.com"
     },
     {
       "name": "Sylius project",
@@ -25,6 +25,22 @@
       "homepage": "https://github.com/Sylius/Calendar/contributors"
     }
   ],
+  "require": {
+    "php": "^8.0"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sylius\\Calendar\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "spec\\Sylius\\Calendar\\": "spec/"
+    }
+  },
   "extra": {
     "branch-alias": {
       "dev-master": "1.0-dev"
