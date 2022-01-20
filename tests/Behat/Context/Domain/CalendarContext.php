@@ -20,13 +20,12 @@ use Webmozart\Assert\Assert;
 final class CalendarContext implements Context
 {
     public function __construct(private DateTimeProviderInterface $calendar)
-    {
-    }
+    {}
 
     /**
      * @Then Calendar provide the :date date
      */
-    public function itIsNow(string $date): void
+    public function calendarProvideTheDate(string $date): void
     {
         Assert::same(
             $this->calendar->now()->format("Y-m-d"),

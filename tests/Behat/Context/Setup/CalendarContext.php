@@ -17,12 +17,8 @@ use Behat\Behat\Context\Context;
 
 final class CalendarContext implements Context
 {
-    private string $projectDirectory;
-
-    public function __construct(string $projectDirectory)
-    {
-        $this->projectDirectory = $projectDirectory;
-    }
+    public function __construct(private string $projectDirectory)
+    {}
 
     /**
      * @Given it is :dateTime now

@@ -4,7 +4,7 @@ services:
         autoconfigure: false
 
     Sylius\Calendar\Tests\Provider\CalendarInterface:
-        class: Sylius\Calendar\Tests\Behat\Provider\Calendar
+        class: Sylius\Calendar\Tests\Behat\Provider\FakeCalendar
         arguments:
             - "%kernel.project_dir%"
 

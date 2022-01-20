@@ -15,30 +15,23 @@ namespace Sylius\Calendar\Tests\Behat\Provider;
 
 use Sylius\Calendar\Provider\DateTimeProviderInterface;
 
-final class Calendar implements DateTimeProviderInterface
+final class FakeCalendar implements DateTimeProviderInterface
 {
-    private string $projectDirectory;
+    private string $temporaryDatePath;
 
     public function __construct(string $projectDirectory)
     {
-        $this->projectDirectory = $projectDirectory;
+        $this->temporaryDatePath = $projectDirectory . '/var/temporaryDate.txt';
     }
 
     public function now(): \DateTimeInterface
     {
-        return $this->provideFakeDateIfSet();
-    }
-
-    private function provideFakeDateIfSet(): \DateTimeInterface
-    {
-        if (file_exists($this->projectDirectory . '/var/temporaryDate.txt')) {
-            $file = fopen($this->projectDirectory . '/var/temporaryDate.txt', 'r');
-            $dateTime = fgets($file);
-            fclose($file);
+        if (file_exists($this->temporaryDatePath)) {
+            $dateTime = file_get_contents($this->temporaryDatePath);
 
             return new \DateTimeImmutable($dateTime);
         }
 
-        return new \DateTimeImmutable();
+        throw  new \RuntimeException(sprintf('There is no defined fake date in \'%s\'', $this->temporaryDatePath));
     }
 }
