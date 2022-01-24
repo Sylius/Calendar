@@ -1,0 +1,10 @@
+default:
+    extensions:
+        FriendsOfBehat\SymfonyExtension:
+            kernel:
+                class: Sylius\Calendar\Kernel
+    suites:
+        default:
+            contexts:
+                - Sylius\Calendar\Tests\Behat\Context\Domain\CalendarContext
+                - Sylius\Calendar\Tests\Behat\Context\Setup\CalendarContext

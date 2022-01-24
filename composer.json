@@ -1,7 +1,7 @@
 {
   "name": "sylius/calendar",
   "type": "library",
-  "version": "v1.0-dev",
+  "version": "v0.0.1-dev",
   "description": "Date handling for PHP applications.",
   "keywords": [
     "calendar",
@@ -26,10 +26,13 @@
     }
   ],
   "require": {
-    "php": "^8.0"
+    "php": "^8.0",
+    "symfony/framework-bundle": "^4.4 || ^5.4"
   },
   "require-dev": {
-    "phpspec/phpspec": "^7.1"
+    "phpspec/phpspec": "^7.1",
+    "behat/behat": "^3.10",
+    "friends-of-behat/symfony-extension": "^2.0"
   },
   "autoload": {
     "psr-4": {
@@ -38,7 +41,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "spec\\Sylius\\Calendar\\": "spec/"
+      "spec\\Sylius\\Calendar\\": "spec/",
+      "Sylius\\Calendar\\Tests\\": "tests/"
     }
   },
   "extra": {
