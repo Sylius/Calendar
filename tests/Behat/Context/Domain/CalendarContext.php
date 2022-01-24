@@ -23,7 +23,7 @@ final class CalendarContext implements Context
     {}
 
     /**
-     * @Then Calendar provide the :date date
+     * @Then I should be able to use :date as my current date
      */
     public function calendarProvideTheDate(string $date): void
     {

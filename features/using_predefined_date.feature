@@ -5,4 +5,4 @@ Feature: Using a predefined date
 
     Scenario: Using predefined date in time-sensitive scenario
         When it is "2020-01-20" now
-        Then Calendar provide the "2020-01-20" date
+        Then I should be able to use "2020-01-20" as my current date
