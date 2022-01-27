@@ -1,7 +1,7 @@
 {
     "name": "sylius/calendar",
     "type": "library",
-    "version": "v0.1-dev",
+    "version": "v0.2-dev",
     "description": "Date handling for PHP applications.",
     "keywords": [
         "calendar",
