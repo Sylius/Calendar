@@ -36,13 +36,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Sylius\\Calendar\\": "src/"
+            "Sylius\\Calendar\\": "src/",
+            "Sylius\\Calendar\\Tests\\Behat\\": "tests/Behat/"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "spec\\Sylius\\Calendar\\": "spec/",
-            "Sylius\\Calendar\\Tests\\": "tests/"
+            "Sylius\\Calendar\\Tests\\Application\\": "tests/Application/src/"
         }
     },
     "extra": {
