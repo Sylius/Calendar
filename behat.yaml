@@ -2,7 +2,7 @@ default:
     extensions:
         FriendsOfBehat\SymfonyExtension:
             kernel:
-                class: Sylius\Calendar\Kernel
+                class: Sylius\Calendar\Tests\Application\Kernel
     suites:
         default:
             contexts:

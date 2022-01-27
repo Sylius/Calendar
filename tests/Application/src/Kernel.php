@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Sylius\Calendar;
+namespace Sylius\Calendar\Tests\Application;
 
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\HttpKernel\Kernel as BaseKernel;
