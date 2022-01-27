@@ -19,4 +19,15 @@ use Symfony\Component\HttpKernel\Kernel as BaseKernel;
 final class Kernel extends BaseKernel
 {
     use MicroKernelTrait;
+
+    public function registerBundles(): iterable
+    {
+        $bundlesPath = $this->getProjectDir() . '/tests/Application/config/bundles.php';
+        $contents = require $bundlesPath;
+        foreach ($contents as $class => $envs) {
+            if ($envs[$this->environment] ?? $envs['all'] ?? false) {
+                yield new $class();
+            }
+        }
+    }
 }
