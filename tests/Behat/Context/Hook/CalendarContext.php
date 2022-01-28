@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Sylius\Calendar\Tests\Behat\Context\Setup;
+namespace Sylius\Calendar\Tests\Behat\Context\Hook;
 
 use Behat\Behat\Context\Context;
 
@@ -21,11 +21,11 @@ final class CalendarContext implements Context
     {
     }
 
-    /**
-     * @Given it is :dateTime now
-     */
-    public function itIsNow(string $dateTime): void
+    /** @AfterScenario */
+    public function deleteTemporaryDate(): void
     {
-        file_put_contents($this->projectDirectory . '/var/temporaryDate.txt', $dateTime);
+        if (file_exists($this->projectDirectory . '/var/temporaryDate.txt')) {
+            unlink($this->projectDirectory . '/var/temporaryDate.txt');
+        }
     }
 }

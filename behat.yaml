@@ -6,5 +6,6 @@ default:
     suites:
         default:
             contexts:
+                - Sylius\Calendar\Tests\Behat\Context\Hook\CalendarContext
                 - Sylius\Calendar\Tests\Behat\Context\Domain\CalendarContext
                 - Sylius\Calendar\Tests\Behat\Context\Setup\CalendarContext

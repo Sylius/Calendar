@@ -13,6 +13,11 @@ services:
         arguments:
             - '@Sylius\Calendar\Provider\DateTimeProviderInterface'
 
+    Sylius\Calendar\Tests\Behat\Context\Hook\CalendarContext:
+        public: true
+        arguments:
+            - "%kernel.project_dir%"
+
     Sylius\Calendar\Tests\Behat\Context\Setup\CalendarContext:
         public: true
         arguments:
