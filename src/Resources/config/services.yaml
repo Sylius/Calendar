@@ -3,5 +3,5 @@ services:
         autowire: false
         autoconfigure: false
 
-    Sylius\Calendar\Provider\CalendarInterface:
+    Sylius\Calendar\Provider\DateTimeProviderInterface:
         class: Sylius\Calendar\Provider\Calendar

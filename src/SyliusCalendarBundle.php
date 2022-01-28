@@ -13,10 +13,8 @@ declare(strict_types=1);
 
 namespace Sylius\Calendar;
 
-use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
-use Symfony\Component\HttpKernel\Kernel as BaseKernel;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-final class Kernel extends BaseKernel
+final class SyliusCalendarBundle extends Bundle
 {
-    use MicroKernelTrait;
 }

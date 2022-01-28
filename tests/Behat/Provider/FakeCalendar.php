@@ -32,6 +32,6 @@ final class FakeCalendar implements DateTimeProviderInterface
             return new \DateTimeImmutable($dateTime);
         }
 
-        throw  new \RuntimeException(sprintf('There is no defined fake date in \'%s\'', $this->temporaryDatePath));
+        return new \DateTimeImmutable();
     }
 }
