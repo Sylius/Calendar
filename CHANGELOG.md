@@ -1,6 +1,6 @@
 # CHANGELOG
 
-### v0.2.1 (2022-01-28)
+### v0.3.0 (2022-01-28)
 
 - [#8](https://github.com/Sylius/Calendar/issues/8) [Behat] Add calendar hook to remove temporary date after scenario ([@GSadee](https://github.com/GSadee))
 
