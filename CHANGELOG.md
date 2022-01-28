@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### v0.2.0 (2022-01-28)
+
+- [#7](https://github.com/Sylius/Calendar/issues/7) Make it a bundle ([@GSadee](https://github.com/GSadee))
+
 ### v0.1.0 (2022-01-25)
 
 - [#1](https://github.com/Sylius/Calendar/issues/1) [Calendar] add provider with current date ([@AdamKasp](https://github.com/AdamKasp))
