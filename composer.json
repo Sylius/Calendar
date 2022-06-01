@@ -33,7 +33,7 @@
         "behat/behat": "^3.10",
         "friends-of-behat/symfony-extension": "^2.0",
         "matthiasnoback/symfony-dependency-injection-test": "^4.3",
-        "phpspec/phpspec": "^7.1",
+        "phpspec/phpspec": "^7.2",
         "phpunit/phpunit": "^8.5"
     },
     "autoload": {
