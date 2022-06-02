@@ -27,13 +27,13 @@
     ],
     "require": {
         "php": "^8.0",
-        "symfony/framework-bundle": "^4.4 || ^5.4"
+        "symfony/framework-bundle": "^5.4 || ^6.0"
     },
     "require-dev": {
         "behat/behat": "^3.10",
         "friends-of-behat/symfony-extension": "^2.0",
         "matthiasnoback/symfony-dependency-injection-test": "^4.3",
-        "phpspec/phpspec": "^7.1",
+        "phpspec/phpspec": "^7.2",
         "phpunit/phpunit": "^8.5"
     },
     "autoload": {
