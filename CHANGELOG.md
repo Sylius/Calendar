@@ -1,5 +1,10 @@
 # CHANGELOG
 
+### v0.4.0 (2022-09-05)
+
+- [#9](https://github.com/Sylius/Calendar/issues/9) Add support for Symfony 6 ([@loic425](https://github.com/loic425))
+- [#10](https://github.com/Sylius/Calendar/issues/10) [Composer][Maintenance] Allow plugins - symfony/flex, config directory moved, phpunit's bump ([@Rafikooo](https://github.com/Rafikooo))
+
 ### v0.3.0 (2022-01-28)
 
 - [#8](https://github.com/Sylius/Calendar/issues/8) [Behat] Add calendar hook to remove temporary date after scenario ([@GSadee](https://github.com/GSadee))
