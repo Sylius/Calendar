@@ -34,7 +34,8 @@
         "friends-of-behat/symfony-extension": "^2.0",
         "matthiasnoback/symfony-dependency-injection-test": "^4.3",
         "phpspec/phpspec": "^7.2",
-        "phpunit/phpunit": "^8.5"
+        "phpunit/phpunit": "^9.5.24",
+        "symfony/flex": "^2.2"
     },
     "autoload": {
         "psr-4": {
@@ -51,6 +52,11 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true
         }
     }
 }
