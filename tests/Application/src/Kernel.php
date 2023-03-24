@@ -22,7 +22,7 @@ final class Kernel extends BaseKernel
 
     public function registerBundles(): iterable
     {
-        $bundlesPath = $this->getProjectDir() . '/tests/Application/config/bundles.php';
+        $bundlesPath = $this->getProjectDir() . '/config/bundles.php';
         $contents = require $bundlesPath;
         foreach ($contents as $class => $envs) {
             if ($envs[$this->environment] ?? $envs['all'] ?? false) {

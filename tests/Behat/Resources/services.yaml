@@ -1,0 +1,19 @@
+services:
+    _defaults:
+        autowire: false
+        autoconfigure: false
+
+    Sylius\Calendar\Tests\Behat\Context\Domain\CalendarContext:
+        public: true
+        arguments:
+            - '@Sylius\Calendar\Provider\DateTimeProviderInterface'
+
+    Sylius\Calendar\Tests\Behat\Context\Hook\CalendarContext:
+        public: true
+        arguments:
+            - "%kernel.project_dir%"
+
+    Sylius\Calendar\Tests\Behat\Context\Setup\CalendarContext:
+        public: true
+        arguments:
+            - "%kernel.project_dir%"
