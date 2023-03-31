@@ -1,5 +1,10 @@
 # CHANGELOG
 
+### v0.5.0 (2023-03-31)
+
+- [#13](https://github.com/Sylius/Calendar/issues/13) Move Behat dependencies to the test app ([@coldic3](https://github.com/coldic3))
+- [#14](https://github.com/Sylius/Calendar/issues/14) [GitHub Actions] Configure workflow to run on the workflow_dispatch event ([@GSadee](https://github.com/GSadee))
+
 ### v0.4.0 (2022-09-05)
 
 - [#9](https://github.com/Sylius/Calendar/issues/9) Add support for Symfony 6 ([@loic425](https://github.com/loic425))
